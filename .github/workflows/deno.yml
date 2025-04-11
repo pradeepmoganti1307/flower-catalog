@@ -35,5 +35,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "pradeepmoga-flower-cata-79"
-          entrypoint: "src/server.js"
+          entrypoint: "router.js"
           root: "."
