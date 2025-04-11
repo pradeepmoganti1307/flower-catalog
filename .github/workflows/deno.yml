@@ -45,6 +45,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "pradeepmoga-flower-cata-79"
+          project: "flower-catalog"
           entrypoint: "router.js"
           root: "."
