@@ -1,21 +1,11 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# This workflow will install Deno then run `deno lint` and `deno test`.
-# For more information see: https://github.com/denoland/setup-deno
-
-name: Deno
+name: Test and Lint
 
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
 permissions:
-  id-token: write 
+  id-token: write
   contents: read
 
 jobs:
@@ -28,7 +18,7 @@ jobs:
 
       - name: Setup Deno
         # uses: denoland/setup-deno@v1
-        uses: denoland/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31  
+        uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
 
@@ -41,10 +31,3 @@ jobs:
 
       - name: Run tests
         run: deno test -A
-
-      - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
-        with:
-          project: "flower-catalog"
-          entrypoint: "router.js"
-          root: "."
