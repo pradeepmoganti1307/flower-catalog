@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guest Book</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="guest-book.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="/"> &lt;&lt; </a>
+      <h1 id="page-heading">Guest Book</h1>
+    </header>
+    <main>
+      <form id="comment-form">
+        <label for="user-name">Name</label>
+        <input type="text" name="user-name" placeholder="Name" id="user-name" />
+        <label for="comment-box"></label>
+        <input
+          type="text"
+          name="comment-box"
+          placeholder="comment"
+          id="comment-box"
+          rows="10"
+          cols="20"
+        />
+        <button type="submit">submit</button>
+      </form>
+      <table id="comments-table" border="1">
+        <thead>
+          <th>name</th>
+          <th>comments</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+  </body>
+</html>

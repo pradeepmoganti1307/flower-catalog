@@ -1,0 +1,31 @@
+#page-heading {
+  color: orange;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px black solid;
+}
+
+main {
+  display: flex;
+  box-sizing: border-box;
+}
+
+nav {
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+#img-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+form {
+  margin: 1%;
+}
