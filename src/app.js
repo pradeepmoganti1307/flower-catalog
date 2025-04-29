@@ -1,8 +1,7 @@
 import { notFoundResponse } from "./http-response-class.js";
-import { saveGuestComments } from "./handlers/guest-book-handlers.js";
+import { saveGuestComments,  serveGuestComments } from "./handlers/guest-book-handlers.js";
 import {
   serveStaticFile,
-  serveGuestComments,
 } from "./handlers/serveStaticFiles.js";
 
 const GET_handlers = (route) => {
