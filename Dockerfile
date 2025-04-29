@@ -4,4 +4,4 @@ WORKDIR /app
 COPY deno* /app
 RUN deno install
 COPY . .
-CMD ["deno", "run", "main.js"]
+CMD ["deno", "run", "-A","main.js"]
