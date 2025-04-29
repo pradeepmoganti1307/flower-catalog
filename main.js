@@ -6,9 +6,9 @@ const main = (port = 8000) => {
 
   try {
     Deno.serve({ port }, createHandler(comments));
-  } catch {
+  } catch(e) {
     // log error message from error instance
-    logErr("error:Intiating a Server");
+    logErr("error:Intiating a Server", e);
   }
 };
 
